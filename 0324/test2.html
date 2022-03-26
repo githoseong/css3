@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test2.html</title>
+    <style>
+        /* 
+            -여러개의 선택자 구분(동등한 레벨) : ,
+                아이디, 태그1, 태그2, 클래스명
+            -자식 선택자 : >
+                아이디(클래스/태그) > ol > li > ul > li
+            -자손 선택자 : 공백
+                아이디(클래스/태그) > ol  li  ul  li
+            -안쪽태그에 접근하는 방법
+        */
+
+        #content > ol > li > ul > li {
+            background-color: cornflowerblue;
+            color: aliceblue;
+        }
+        #content > ol > li {
+            background-color: rgb(149, 48, 158);
+            color: aliceblue;
+        }
+
+        ul li {
+            background-color: yellowgreen;
+            color: blue;
+        }   
+    </style>
+</head>
+<div>
+    <div id="content">
+        <h2>길동이가 좋아하는 음식 Best 5
+            <ol>
+                <li>짜장면</li>
+                <li>과일
+                    <ol>
+                        <li>사과</li>
+                        <li>배</li>
+                        <li>바나나</li>
+                    </ol>
+                </li>
+                <li>찐빵</li>
+                <li>피자</li>
+            </ol>
+        </h2>
+    </div>
+    <p><br/></p>
+    <div>
+    <h2>길동이가 좋아하는 음식 Best 5
+        <ul>
+            <li>짜장면</li>
+            <li>과일
+                <ul>
+                    <li>사과</li>
+                    <li>배</li>
+                    <li>바나나</li>
+                </ul>
+            </li>
+            <li>찐빵</li>
+            <li>피자</li>
+        </ul>
+    </h2>
+    </div>
+    <p><br/></p>
+    <div>
+    <h2>길동이가 좋아하는 음식 Best 5
+        <ul>
+            <li>짜장면</li>
+            <li>과일
+                <ul>
+                    <li>사과</li>
+                    <li>배</li>
+                    <li>바나나</li>
+                </ul>
+            </li>
+            <li>찐빵</li>
+            <li>피자</li>
+        </ul>
+    </h2>
+    </div>
+<p><br/></p>
+</body>
+</html>

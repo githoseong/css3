@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test5.html</title>
+    <style>
+        #content1, #content2 {
+            width: 400px;
+            float: right; /* 오른쪽으로 화면에 붙일때 사용 왼쪽도가능 */
+            border-style: solid;
+        }
+        #content4, #content5 {
+            width: 400px;
+            float: left; /* */
+        }
+        #content3 {
+            clear: both;
+            background-color: aquamarine;
+        }
+        fieldset {
+            border: 3px solid #ccc;
+            /* margin: 20px; 전체마진을 의미 */
+            /* margin:20px 0px 30px 10px; 숫자4개면 (위>오>아래>왼 순으로 적용) */
+            /* margin: 20px 30px; 숫자2개면 앞쪽숫자는 위아래, 뒤쪽은 왼쪽오른쪽 */
+            /* margin: 20px 30px 40px; 숫자3개면 위>오>아래. 왼쪽은 오른쪽값을따라간다.*/
+            margin: 25px 10px 40px; 
+            /* padding: 20px; 위,오,아래,왼 모두 적용 */
+            padding: 25px 10px 40px; 
+        }
+        legend {
+            color:darkblue;
+            font-size:15px;
+            font-weight: bolder;
+        }
+        ul li {
+            margin: 20px 0px;
+            list-style:none;
+        }
+        .btn {
+            margin: 0px 20px 0px 0px;
+        }
+        #imgsrc {
+            clear: both;
+            
+        }
+        .imgPosition {
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+    <h2>폼태그와 css</h2>
+    <form name="myform">
+        <div id="content">
+            <div id="content1">
+                <fieldset>   
+                    <legend>로그인1</legend>
+                    <ul>     
+                        <li>      
+                            <label for="mid" class="tit" >아이디</label>
+                            <input type="text" name="mid" id="mid" autofocus required/>
+                        </li>                    
+                        <li>
+                            <label for="pwd" class="tit">비밀번호</label>
+                            <input type="password" name="pwd" id="pwd" />
+                        </li>
+                        <li>
+                            <input type="submit" value="전송"/>            
+                            <input type="reset" value="다시입력"/>  
+                        </li>
+                    </ul> 
+                </fieldset>         
+            </div>
+            <div id="content2">
+                <fieldset>   
+                    <legend>로그인2</legend>
+                    <ul>     
+                        <li>      
+                            <label for="mid" class="tit" >아이디</label>
+                            <input type="text" name="mid" id="mid"  required/>
+                        </li>                    
+                        <li>
+                            <label for="pwd" class="tit">비밀번호</label>
+                            <input type="password" name="pwd" id="pwd" />
+                        </li>
+                        <li>
+                            <input type="submit" value="전송" class="btn"/>            
+                            <input type="reset" value="다시입력" class="btn"/>  
+                        </li>
+                    </ul> 
+                </fieldset>         
+            </div>
+            <div id="content3">
+                <fieldset>   
+                    <legend>로그인3</legend>
+                    <ul>     
+                        <li>      
+                            <label for="mid" class="tit" >아이디</label>
+                            <input type="text" name="mid" id="mid"  required/>
+                        </li>                    
+                        <li>
+                            <label for="pwd" class="tit">비밀번호</label>
+                            <input type="password" name="pwd" id="pwd" />
+                        </li>
+                        <li>
+                            <input type="submit" value="전송"/>            
+                            <input type="reset" value="다시입력"/>  
+                        </li>
+                    </ul> 
+                </fieldset>         
+            </div>
+            <div id="content4">
+                <fieldset>   
+                    <legend>로그인4</legend>
+                    <ul>     
+                        <li>      
+                            <label for="mid" class="tit" >아이디</label>
+                            <input type="text" name="mid" id="mid" autofocus required/>
+                        </li>                    
+                        <li>
+                            <label for="pwd" class="tit">비밀번호</label>
+                            <input type="password" name="pwd" id="pwd" />
+                        </li>
+                        <li>
+                            <input type="submit" value="전송"/>            
+                            <input type="reset" value="다시입력"/>  
+                        </li>
+                    </ul> 
+                </fieldset>         
+            </div>
+            <div id="content5">
+                <fieldset>   
+                    <legend>로그인5</legend>
+                    <ul>     
+                        <li>      
+                            <label for="mid" class="tit" >아이디</label>
+                            <input type="text" name="mid" id="mid"  required/>
+                        </li>                    
+                        <li>
+                            <label for="pwd" class="tit">비밀번호</label>
+                            <input type="password" name="pwd" id="pwd" />
+                        </li>
+                        <li>
+                            <input type="submit" value="전송" class="btn"/>            
+                            <input type="reset" value="다시입력" class="btn"/>  
+                        </li>
+                    </ul> 
+                </fieldset>
+            </div>      
+                <div class="imgPosition">
+                    <img src="../../images/1.jpg" id="imgsrc" width="400px">
+                </div>       
+            </div>
+    </form>    
+</body>
+</html>

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main</title>
+</head>
+<style>
+    #head {
+        border-bottom: 5px solid;
+        padding: auto;
+        margin-top: 70px;
+    }
+    #sec {
+        width: 1500px;
+        height: auto;
+        margin: 140px auto;
+        margin-bottom: 100px;
+    }
+    #sec_0 {
+        margin: 10px auto;
+    }
+    #sec_1 {
+        text-align: center;
+        color: rgb(7, 28, 46);
+        font-size: 50px;
+        font-weight: 100;
+    }
+    #sec_2 {
+        margin-left: 1000px;
+        margin-top: 100px;
+    }
+    #sec_3 {
+        border-bottom: 1px rgb(7, 28, 46) solid;
+        margin: 20px 300px 50px;
+    }    
+    #sec_4 {
+        width:1050px;
+        margin: 10px 100px 30px auto;
+        float: right;
+    }
+    .sec_photo1 {
+        width: 230px;
+        margin: 10px 10px 50px 10px;
+        
+        float:left;
+    }
+    .form2_title {
+        color: rgb(7, 28, 46);
+        font-size: 30px;
+        font-weight: bold;
+    }
+    #sec_list1 {
+        width: 300px;
+        float: left;
+        border: 1px solid rgb(7, 28, 46);
+    }
+    #sec_list2 {
+        text-align: center;
+    }
+    #sec_list3 {
+        text-align: right;
+        margin: 15px 0px 10px 0px;
+    }
+    .sec_list4 {
+        text-align: center;
+        width: 250px;
+        margin: 15px 0px;
+        padding:10px;
+    }
+    #sec_content1 {
+        font-weight: bold;
+    }
+    #sec_list_title {
+        color: rgb(7, 28, 46);
+        font-weight: 300;
+        font-size: 40px;
+    }
+    #sec_color {
+        width: 230px;
+        margin: 20px auto;
+        height: 150px;
+    }
+    .sec_color_box {
+        width:30px;
+        height: 25px;
+        margin: 10px;
+        float: left;
+    }
+    #sec_list5 > a >img{
+        width:250px;
+        margin: 20px;
+        border-radius: 30px;
+    }
+    #foot {
+        margin: 0px 0px;
+        height: 200px;
+        background-color: black;
+        clear: both;
+    }
+    #foot_1 {
+        height: 130px;
+        margin: 0px 0px;
+        background-color: rgb(73, 11, 11);
+    }
+    #foot_11 {
+        text-align: center;
+        margin: 0px auto;
+        color: rgb(180, 193, 206);
+        padding: 20px;
+        font-size: 40px;
+        font-weight: bolder;
+    }
+    #foot_11 > a {
+        color: rgb(180, 193, 206)
+    }
+    #foot_2{
+        height: 30px;
+        color: white;
+        width:1300px;
+        margin: 40px auto 0px;
+    }
+    #foot_2 > ul > li {
+        float: left;
+        list-style: circle;
+        margin: 0px 40px;
+    }
+    #head_1 {
+        margin: 10px auto;
+        height: 200px;
+        width: 1300px
+    }
+    #head_title {
+        font-size: 50px;
+        margin: 30px 530px 0px;
+        width:300px;
+        font-weight:600;
+        color: rgb(7, 28, 46);
+    }
+    #head_menu {
+        margin: 70px auto;
+        width:1200px;
+        height: 50px;
+    }
+    ul li{
+        list-style: none;
+    }
+    #head_menu > ul > li {
+        float: left;
+        margin-right: 140px;
+        color: rgb(7, 28, 46);
+        font-size: 30px;
+    }
+    a {
+        text-decoration: none;
+        color: rgb(7, 28, 46);
+    }
+    #head_menu > ul > li >ul {
+        display: none;
+    }
+    #head_menu > ul >li:hover >ul  {
+        display: block;
+    }
+    ul {
+        text-align: center;
+    }
+    #fom {
+        position: absolute;
+        right:260px;
+        top:250px;
+        color: black;
+    }
+        
+</style>
+<body>
+    <div id="all">
+        <div id="head">
+            <header>
+                <div id="head_1">
+                    <div id="head_title">
+                        <a href="main.html">ho's closet</a>
+                    </div>       
+                    <div id="head_menu">
+                        <ul>
+                            <li><a href>남성</a>
+                                <ul>
+                                    <li><a href>아우터</a></li>
+                                    <li><a href>상의</a></li>
+                                    <li><a href>하의</a></li>
+                                </ul>                                
+                            </li>
+                            <li><a href="">여성</a>
+                                <ul>
+                                    <li><a href>아우터</a></li>
+                                    <li><a href>상의</a></li>
+                                    <li><a href>하의</a></li>
+                                </ul>
+                            </li>
+                            <li><a href>아동</a>
+                                <ul>
+                                    <li><a href>아우터</a></li>
+                                    <li><a href>상의</a></li>
+                                    <li><a href>하의</a></li>
+                                </ul>
+                            </li>
+                            <li><a href>향수</a>
+                                <ul>
+                                    <li><a href>스페셜</a></li>
+                                    <li><a href>여성</a></li>
+                                    <li><a href>남성</a></li>
+                                </ul>
+                            </li>
+                            <li><a href>언더웨어</a>
+                                <ul>
+                                    <li><a href>여성</a></li>
+                                    <li><a href>남성</a></li>
+                                    <li><a href>파자마</a></li>
+                                </ul>
+                            </li>          
+                        </ul>
+                        <form id="fom">
+                            검색 <input type="text" name="search" placeholder="여기에 입력하세요"/> 
+                        </form>
+                    </div> 
+                </div>
+            </header>
+        </div>
+        <div id="sec">
+            <div id="sec_0">
+                <section>
+                    <div id="sec_1">
+                        Outer
+                    </div>
+                    <div id="sec_2">
+                    <form>    
+                            <select>
+                                <option value="가격높은순">가격높은순</option>
+                                <option value="가격낮은순">가격낮은순</option>
+                                <option value="인기순">인기순</option>
+                                <option value="최신순" selected>최신순</option>
+                            </select>
+                        <input type="text" placeholder="22ss 청바지" size="12px">검색
+                    </form>
+                    </div>
+                    <div id="sec_3">
+                    </div>
+                    <div id="sec_4">
+                        <div class="sec_photo1">
+                            <img src="../../images/beam13.jpg"/>
+                            <span id="sec_content1">ho's closet</span><br/>이호성이 만든 겨울코트. 덥지만<br/> 봄에도 착용가능
+                        </div>
+                        <div class="sec_photo1">
+                            <img src="../../images/beam14.jpg"/>
+                            <span id="sec_content1">ho's closet</span><br/>이호성의 베이지색 트렌치코트.<br/> 이 옷만 있으면 인기남
+                        </div>
+                        <div class="sec_photo1">
+                            <img src="../../images/beam15.jpg"/>
+                            <span id="sec_content1">ho's closet</span><br/>이호성의 민트색 트렌치코트. <br/> 여름바다가 생각나는 코트
+                        </div>
+                        <div class="sec_photo1">
+                            <img src="../../images/beam16.jpg"/>
+                            <span id="sec_content1">ho's closet</span><br/>이호성의 화이트코트. <br/> 겨울처럼 시원~하다
+                        </div>
+                        <div class="sec_photo1">
+                            <img src="../../images/beam17.jpg"/>
+                            <span id="sec_content1">ho's closet</span><br/>그냥 코트. 모델에 속지말자<br/> 봄에도 착용가능
+                        </div>
+                        <div class="sec_photo1">
+                            <img src="../../images/beam18.jpg"/>
+                            <span id="sec_content1">ho's closet</span><br/>검은색 판초우의.<br/> 비를 막아준다
+                        </div>
+                        <div class="sec_photo1">
+                            <img src="../../images/beam19.jpg"/>
+                            <span id="sec_content1">ho's closet</span><br/>민트색 판초우의. <br/> 간부들이 쓰던 그 옷
+                        </div>
+                        <div class="sec_photo1">
+                            <img src="../../images/beam20.jpg"/>
+                            <span id="sec_content1">ho's closet</span><br/>비싸지만 그 만큼  <br/> 잘 만들어진 옷.
+                        </div>
+                        <div class="sec_photo1">
+                            <img src="../../images/beam21.jpg"/>
+                            <span id="sec_content1">ho's closet</span><br/>다른 옷과 비슷한 옷<br/> 하지만 입는사람에 따라 다르다
+                        </div>
+                        <div class="sec_photo1">
+                            <img src="../../images/beam22.jpg"/>
+                            <span id="sec_content1">ho's closet</span><br/>베이지.<br/>세가지 색상을 사면 2만원 할인
+                        </div>
+                        <div class="sec_photo1">
+                            <img src="../../images/beam23.jpg"/>
+                            <span id="sec_content1">ho's closet</span><br/>카키. <br/> 세가지 색상을 사면 2만원 할인
+                        </div>
+                        <div class="sec_photo1">
+                            <img src="../../images/beam24.jpg"/>
+                            <span id="sec_content1">ho's closet</span><br/>블랙. <br/> 세가지 색상을 사면 2만원 할인
+                        </div>
+                    </div>
+                    <div id="sec_list1">
+                        <div id="sec_list2">
+                        <span id="sec_list_title">Outer</span>(310)
+                        </div>
+                        <div id="sec_list3">
+                            <form id="form1">
+                                <input type="text" size="12px"/>
+                                <input type="button" value="검색"/>
+                            </form>
+                        </div>
+                        <div class="sec_list4">
+                            <form class="form2">
+                                <ul><span class="form2_title">성별</span><hr/>
+                                    <li><input type="checkbox" vlaue="긴팔" checked>남자</li><hr/>
+                                    <li><input type="checkbox" vlaue="긴팔"/>여자</li><hr/>
+                                    <li><input type="checkbox" vlaue="긴팔"/>공용</li><hr/>
+                                </ul><br/>
+                                <ul><span class="form2_title">상품</span><hr/>
+                                    <li><input type="checkbox" vlaue="긴팔" checked/>코트</li><hr/>
+                                    <li><input type="checkbox" vlaue="긴팔"/>긴팔</li><hr/>
+                                    <li><input type="checkbox" vlaue="긴팔"/>반팔</li><hr/>
+                                    <li><input type="checkbox" vlaue="긴팔"/>바지</li><hr/>
+                                </ul><br/>
+                            </form>
+                        </div>
+                        <div class="sec_list4">
+                            <span class="form2_title">색상</span>
+                                <div id="sec_color">
+                                    <a href=""><div class="sec_color_box" style="background-color:aqua"></div></a>
+                                    <a href=""><div class="sec_color_box" style="background-color:rgb(1, 56, 236)"></div></a>
+                                    <a href=""><div class="sec_color_box" style="background-color:rgb(43, 243, 3)"></div></a>
+                                    <a href=""><div class="sec_color_box" style="background-color:rgb(245, 20, 4)"></div></a>
+                                    <a href=""><div class="sec_color_box" style="background-color:rgb(8, 8, 8)"></div></a>
+                                    <a href=""><div class="sec_color_box" style="background-color:rgb(247, 248, 248)"></div></a>
+                                    <a href=""><div class="sec_color_box" style="background-color:rgb(255, 0, 255)"></div></a>
+                                    <a href=""><div class="sec_color_box" style="background-color:rgb(208, 243, 7)"></div></a>
+                                    <a href=""><div class="sec_color_box" style="background-color:rgb(69, 143, 212)"></div></a>
+                                    <a href=""><div class="sec_color_box" style="background-color:rgb(120, 9, 247)"></div></a>
+                                    <a href=""><div class="sec_color_box" style="background-color:rgb(214, 99, 115)"></div></a>
+                                    <a href=""><div class="sec_color_box" style="background-color:rgb(241, 139, 4)"></div></a>
+                                </div>
+                        </div>
+                        <div id="sec_list5">
+                            <a href="1.html" ><img src="../../images/neon2.jpg" alt="처음으로" title="처음으로"></a>
+                        </div>
+                    </div>
+                    
+                </section>
+            </div>
+        </div>
+        <div id="foot">
+            <footer>
+                <div id="foot_1">
+                    <div id="foot_11">
+                        <a href="#head">ho's closet</a>
+                    </div>
+                </div>
+                <div id="foot_2">
+                    <ul>
+                        <li>TEL : 02-1234-1234</li>
+                        <li>Email : hoho@naver.com</li>
+                        <li>문의</li>
+                        <li>이용제약</li>
+                        <li>기업정보</li>
+                        <li>채용정보</li>
+                        <li>㈜ho's closet</li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

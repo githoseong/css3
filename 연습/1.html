@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>first</title>
+</head>
+<style>
+    img {
+        width:1200px;
+        box-shadow: 10px 10px 10px #000;
+        border-radius: 20px;
+    }
+    #all {
+        border:5px solid; 
+        height: 1000px;
+    }
+    #img {
+        margin-top: 100px;
+        margin-left:0px;
+    }
+    body {
+        background-color: rgb(10, 10, 10);
+    }
+    #menu >ul {
+        display: none;
+    }
+    #all2:hover >#menu > ul{
+        display:block;
+    }
+    #all2:hover >img {
+        box-shadow: 10px 10px 10px rgb(65, 10, 10);
+    }
+    ul li {
+        list-style:none;
+    }
+    a {
+        text-decoration: none;
+        font-weight: bolder;
+        text-shadow: 2px 2px 2px rgb(128, 116, 116);
+        color:white;
+    }
+    #menu {
+        color: white;
+        font-size: 30px;
+        line-height: 120px;
+        position: absolute;
+        top: 200px;
+        left: 430px;
+    }
+    #menu > ul > li >ul{
+        display:none;
+        line-height: 30px;
+        font-size: 15px;
+        position: static;
+    }
+    #menu > ul > li:hover > ul {
+        display: block;
+    }
+    #menu > ul > li:hover {
+        text-decoration: underline;
+        text-underline-position: under;
+        text-decoration-color: white;
+    }
+    ul > li > ul > li:active {
+        background-color: rgb(26, 24, 24);
+    }
+    #title {
+        color: aliceblue;
+        font-size: 25px;
+        position: absolute;
+        left:900px;
+        top:70px;    
+    }
+    #all2 {
+        width: 1200px;
+        margin: 0px auto;
+    }
+    #title:hover {
+        cursor:pointer;
+    }
+</style>
+<body>
+    <div id="all">
+        <span id="title">
+        <a href="main.html">ho's closet</a>
+        </span>
+        <div id="all2">
+            <img src="../../images/neon2.jpg" id="img">
+            <div id="menu">
+                <ul>
+                    <li><a href='#'>남성 </a>
+                        <ul>
+                            <li><a href="outer.html">아우터</a></li>
+                            <li><a href>상의</a></li>
+                            <li><a href>하의</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">여성</a>
+                        <ul>
+                            <li><a href=>아우터</a></li>
+                            <li><a href=>상의</a></li>
+                            <li><a href=>하의</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">아동</a>
+                        <ul>
+                            <li><a href=>아우터</a></li>
+                            <li><a href=>상의</a></li>
+                            <li><a href=>하의</a></li>
+                        </ul>
+                    </li>        
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
