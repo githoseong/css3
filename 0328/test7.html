@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test7.html</title>
+    <style>
+        #layer1 {
+            width: 500px;
+            height: 500px;
+            background-color: aqua;
+            border: 1px solid gray;
+            padding: 50px;
+            position: absolute;
+            z-index: 0;
+        }
+        #static {
+            position: static;
+            /* left: 100px; 있는 그대로. 쓰나마나 */
+            color: blue;
+        }
+        #absolute {           /*  박스를 기준으로 움직임 */
+            position: absolute;
+            left: 200px;
+            top: 100px;
+            color: red
+        }
+        #fixed {           /* 전체 윈도우를 기준으로 움직임*/
+            position: fixed;
+            left: 200px;
+            top: 100px;
+            color: red
+        }
+        #relative {          /*   앞의 내용을 기준으로 움직임 */
+            position: relative;
+            left: 200px;
+            top: 100px;
+            color: rgb(245, 4, 245)
+        }
+        #layer2 {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            left: 300px;
+            top: 150px;
+            background-color: brown;
+            z-index: 99;
+        }
+        #layer3 {             /*  나중에 쓴 absolute가 위로 올라감  근데 z-index가 있으면 숫자가 작은쪽이 밑으로 내려감*/
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            left: 150px;
+            top: 100px;
+            background-color: rgb(111, 7, 248);
+            z-index: 3;
+        }
+        #layer4 {
+            width: 150px;
+            height: 50px;
+            position: fixed;
+            right: 0px;
+            bottom: 0px;
+            background-color: aqua;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h2> <a name="top">포지션 연습</a></h2>
+    <ol>
+        <li>static position(기본)</li>
+        <li>absolute position(절대지정-작업그룹기준)</li>
+        <li>fixed position(절대지정-윈도우기준</li>
+        <li>relratove position(상대지정)</li>
+    </ol>
+    <hr/>
+    <div id="layer1">
+        <div id="static">이곳은 static 영역입니다.</div>
+        <div id="absolute">이곳은 absolute 영역입니다.</div>
+        <div id="fixed">이곳은 fixed 영역입니다.</div>
+        <div id="relative">이곳은 relative 영역입니다.</div>
+    </div>
+    <div id="layer2">이곳은 레이어 2</div>
+    <div id="layer3">이곳은 레이어 3</div>
+    <div id="layer4"><a href="#top">이곳은 레이어 4</a></div>
+    <div>d안녕하세요</div>
+    <div>d안녕하세요</div>
+    <div>d안녕하세요</div>
+    <div>d안녕하세요</div>
+    <div>d안녕하세요</div>
+    <div>d안녕하세요</div>
+    <div>d안녕하세요</div>
+    <div>d안녕하세요</div>
+    <div>d안녕하세요</div>
+    <div>d안녕하세요</div>
+    <div>d안녕하세요</div>
+    <div>d안녕하세요</div>
+    <div>d안녕하세요</div>
+    <div>d안녕하세요</div>
+    <div>d안녕하세요</div>
+    <div>d안녕하세요</div>
+    <div>d안녕하세요</div>
+    <div>d안녕하세요</div>
+    <div>d안녕하세요</div>
+    <div>d안녕하세요</div>
+    <div>d안녕하세요</div>
+    <div>d안녕하세요</div>
+    <div>d안녕하세요</div>
+    <div>d안녕하세요</div>
+    <div>d안녕하세요</div>
+    <div>d안녕하세요</div>
+    <div>d안녕하세요</div>
+    <div>d안녕하세요</div>
+    <div>d안녕하세요</div>
+    <div>d안녕하세요</div>
+    <div>d안녕하세요</div>
+    <div>d안녕하세요</div>
+    <div>d안녕하세요</div>
+    <div>d안녕하세요</div>
+    <div>d안녕하세요</div>
+    <div>d안녕하세요</div>
+    <div>d안녕하세요</div>
+    <div>d안녕하세요</div>
+    <div>d안녕하세요</div>
+    <div>d안녕하세요</div>
+    <div>d안녕하세요</div>
+    <div>d안녕하세요</div>
+    <div>d안녕하세요</div>
+    <div>d안녕하세요</div>
+    <div>d안녕하세요</div>
+    <div>d안녕하세요</div>
+    <div>d안녕하세요</div>
+    <div>d안녕하세요</div>
+    <div>d안녕하세요</div>
+    <div>d안녕하세요</div>
+    <div>d안녕하세요</div>
+    <div>d안녕하세요</div>
+    <div>d안녕하세요</div>
+    <div>d안녕하세요</div>
+    <div>d안녕하세요</div>
+    <div>d안녕하세요</div>
+    <div>d안녕하세요</div>
+    <div>d안녕하세요</div>
+    <div>d안녕하세요</div>
+    <div>d안녕하세요</div>
+    <div>d안녕하세요</div>
+    <div>d안녕하세요</div>
+    <div>d안녕하세요</div>
+    <div>d안녕하세요</div>
+    <div>d안녕하세요</div>
+    <div>d안녕하세요</div>
+    <div>d안녕하세요</div>
+    <div>d안녕하세요</div>
+</body>
+</html>
