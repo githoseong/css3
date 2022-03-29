@@ -8,15 +8,46 @@
         div {
             margin: 20px;
         }
+        #pcontent {
+            visibility: hidden; /*영역은 확보되면서 화면에서 감춰준다*/
+        }
         .aa2 {
-            display: none;
+            display: none;  /*영역까지 없애버리면서 화면에서 사라진다 */
+        }  
+        .aa5,.aa6 {
+            width: 400px;
+            border: 2px solid gray;
+        }
+        .aa11 {
+            display: block;
+            width: 100px;
+            color: blue;
+            border: 1px solid;
+            margin: 10px;
+            padding:15px;
+        }
+        .aa12 {
+            display: inline;
+            width: 100px;
+            color: rgb(255, 0, 0);
+            border: 1px solid;
+            margin: 10px;
+            padding:15px;
+        }
+        .aa13 {
+            display: inline-block;    /*인라인처럼 단어의미로 줄이 안바뀌고 블럭처럼 자기 영역이 있음. 마진적용됨*/
+            width: 100px;
+            color: rgb(253, 2, 241);
+            border: 1px solid;
+            margin: 10px;
+            padding:15px;
         }
     </style>
 </head>
 <body>
     <h2>Display 속성</h2>
     <p>Display속성은 각각의 요소를 어떻게 보여줄지를 결정한다.</p>
-    <p>속성처리값? visibility(보여주기 속성- 기본값) / hidden(감추기)</p>
+    <p id="pcontent">속성처리값? visibility(보여주기 속성- 기본값) / hidden(감추기) / inherit(부모요소 값을 상속받는다)</p>
     <p>
         none : 보여주지 않을때<br/>
         inline : 인라인상태(자신의 고유영역만 확보) - 단어의 의미로 해석?<br/>
@@ -31,7 +62,17 @@
     <hr/>
     <h2>block속성</h2>
     <div class="aa5">
-        5.block입니다. <span class="aa11"></span><font color="red">5.안녕</font>안녕
+        5.block입니다. <span class="aa11">aa11. </span><font color="red">5.안녕</font>안녕
+    </div>
+    <hr/>
+    <h2>inline속성</h2>
+    <div class="aa6">
+        6.block입니다. <span class="aa12">aa12. </span><font color="blue">6.안녕</font>안녕
+    </div>
+    <hr/>
+    <h2>inline-block속성</h2>
+    <div class="aa7">
+        7.block입니다. <span class="aa13">aa13. </span><font color="green">7.안녕</font>안녕
     </div>
 </body>
 </html>
